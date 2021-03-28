@@ -1,0 +1,55 @@
+
+/**
+* Team -Bereich
+*/
+
+
+.aboutMe{
+    padding-top: 200px;
+    padding-bottom:200px;
+    text-align: center;
+    background-color: white;
+    color:#313d49;
+    font-family: $font-timesnewroman;
+    
+}
+
+//open
+.aboutmetext{
+    width: 65.33333%;
+    @media(min-width: 550px){
+        width: 109%;
+    }
+
+    @media(min-width:750px){
+        width: 65.3333%;
+    }
+}
+
+
+
+.seinab-pic{
+    display: none;
+}
+@media($bp-larger-than-tablet){
+    .seinab-pic{
+        display: block;
+    }
+    .seinab-image{
+        width: 118%;
+        border-radius: 10000px;
+        border: 5px solid black;
+        margin-left: 35%;
+        margin-top: 47%;
+    }
+}
+
+.our-teachers{
+    padding-top: 0px;
+    padding-bottom:150px;
+    text-align: center;
+    background-color: white;
+    color:#313d49;
+    font-family: $font-timesnewroman;
+}
+

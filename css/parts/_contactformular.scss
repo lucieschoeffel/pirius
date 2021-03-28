@@ -1,0 +1,135 @@
+/**
+* Contact-Formular Bereich
+*/
+
+.contact-formular{
+    padding-top:100px;
+    padding-bottom: 100px;
+    
+}
+
+.contact-heading{
+    font-weight: lighter;
+    margin-bottom: 15px;
+
+}
+.heading-main{
+    font-family: $font-timesnewroman;
+}
+
+.contact-subheading{
+    font-size: 150%;
+}
+
+.contact-methods{
+    list-style-type: none;
+}
+.contact-methods li {
+    width: 50%;
+    float: left;
+    font-weight: lighter;
+    height: 2.5em;
+
+    @media($bp-larger-than-phablet){
+        width:100%;
+        margin-bottom: 6px;
+    }
+    @media(min-width: 950px){
+        width:50%;
+        margin-bottom: 6px;
+    }
+}
+
+.contact-methods .fa{
+    font-size: 150%;
+}
+
+.contact-icon{
+    display:inline-block;
+    width: 40px;
+    text-align: center;
+}
+
+.contact-input{
+    width: 100%;
+    margin-bottom: 28px;
+    background-color: white;
+}
+
+.contact-input-name{
+    width: auto;
+    margin-bottom: 28px;
+}
+
+.course-type-id{
+    width: auto;
+    margin-bottom: 28px;
+}
+
+.course-type-select{
+    width:41%;
+}
+.desired-level-select{
+    width:100%;
+}
+.desired-level-box{
+    width:58%;
+    float:right;
+
+    @media($bp-larger-than-phablet){
+        width:51%;
+    }
+}
+
+.course-type-box{
+    @media($bp-larger-than-phablet){
+        width:117%;
+    }
+}
+
+.contact-input-name-size-firstname{
+    width:41%;
+
+    @media(min-width: 500px){
+        width: 41%;
+    }
+    @media($bp-larger-than-phablet ){
+        width: 48%;
+    }
+    @media(min-width: 1092px){
+        width: 47%;
+    }
+}
+.contact-input-name-size-surname{
+    width:57%;
+
+    @media(min-width: 500px){
+        width: 57%;
+    }
+
+    @media($bp-larger-than-phablet ){
+        width: 50%;
+    }
+
+    @media(min-width: 1092px){
+        width: 52%;
+    }
+}
+.contact-message{
+    height:204px;
+}
+
+input.contact-submit[type="submit"]{
+    position: center;
+    margin-bottom: 0px;
+    background-color: cadetblue;
+    color:white;
+}
+
+.contact-form{
+    margin-bottom: 0px;
+}
+
+#contact-success{
+    color: rgb(0, 255, 0);
+}

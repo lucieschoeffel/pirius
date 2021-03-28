@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= "utf-8" />
+        <title>The Team</title>
+
+        <link rel="stylesheet" type="text/css" href="./vendor/skeleton/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="./vendor/skeleton/skeleton.css" />
+        <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;1,300;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-brand-wrapper">
+                <a class="header-brand" href="index.html">Pirius</a>
+            </div>
+            <nav class="header-navbar">
+                <ul class="header-navbar-links">
+                    <div class="header-navbar-links-div">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </div>
+                </ul>
+                <ul class="header-navbar-links-third">
+                        <li><a href="index.html"><img src="img/english-flag.jpg"></img></a></li>
+                        <li><a href="german-index.html"><img src="img/german-flag.jpg"></img></a></li>
+                </ul>
+            </nav>
+        
+            <div class="container">
+
+                <div class="slogan">
+                    <div class="slogan-top"> Pirius </div>
+                    <div class="slogan-bottom"> Learning Beyond the Classroom </div>
+                    <a href="courses.html" class="button" >
+                        Check out the courses
+                    </a>
+                    </button>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="contact-formular" id="contact-formular">
+            <div class="container">
+                <div class="row">
+                    <div class="six columns">
+                        <div class="contact-heading">
+                            <h2 class="heading-main">You're interested in a course?</h2>
+                            <p class="contact-subheading">Drop us a message what course you'd like to attend.</p>
+
+                            <ul class="contact-methods">
+                                <li>
+                                    <span class="contact-icon"><i class="fa fa-mobile" aria-hidden="true"></i>
+                                    </span>
+                                    +490177 45544545
+                                </li>
+                                <li>
+                                    <span class="contact-icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </span>
+                                    info@pirius.com
+                                    
+                                </li>
+                                <li>
+                                    <span class="contact-icon"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </span>
+                                    @pirius
+                                </li>
+                                <li>
+                                    <span class="contact-icon"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </span>
+                                    @pirius
+                                </li>
+                                <li> 
+                                    <span class="contact-icon"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    </span>
+                                    facebook.com/pirius
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="six columns">
+                        <form class="contact-form" action="index.html" method="GET">
+
+                            <label class="title" for="Title">Title:</label> 
+                            <select name="title" required="required">
+                                <option value="">Choose *</option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="Ind.">Ind.</option>
+                            </select>
+                            <br>
+
+                            <input class="contact-input-name contact-input-name-size-firstname" type="text" placeholder="First Name *" required="required"/>
+                            <input class="contact-input-name contact-input-name-size-surname" type="text" placeholder="Surname *" required="required"/>
+                            
+                            <div class="desired-level-box">
+                                <label class="desired-level" for="Desired Level">Desired Level:</label> 
+                                <select class="desired-level-select" name="Desired Level" required="required">
+                                    <option value="">Choose *</option>
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </div>
+
+                            <div class="course-type-box">
+                                <label class="course-type" for="Course Type">Course Type:</label> 
+                                <select class="course-type-select"name="Course Type" required="required" id=course-type-id>
+                                    <option value="">Choose *</option>
+                                    <option value="Morning Course">Morning Course</option>
+                                    <option value="Afternoon Course">Afternoon Course</option>
+                                    <option value="Evening Course">Evening Course</option>
+                                    <option value="One-on-One Course">One-on-One Course</option>
+                                </select>
+                            </div>
+
+
+                            <input class="contact-input" type="text" placeholder="Your Email *" required="required"/>
+                            <textarea class="contact-input contact-message" placeholder="Your message *" required="required"></textarea>
+                            <input class="contact-submit" type="submit" value="Submit message" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <hr class="footer-hr">
+                <p>©2020 by Pirius • IMPRESSUM <a class="top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></p>
+            </div>
+        </div>
+        
+    </body>
+
+
+</html>

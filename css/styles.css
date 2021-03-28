@@ -1,0 +1,1633 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+/* Base files. */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active {
+  outline: 0;
+}
+
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+a {
+  color: #1eaedb;
+}
+
+a:hover {
+  color: #1b9cc5;
+}
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #e1e1e1;
+}
+
+.u-full-width {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-pull-left {
+  float: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem;
+}
+
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+@media (min-width: 550px) {
+  h1 {
+    font-size: 5.0rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  h3 {
+    font-size: 3.6rem;
+  }
+  h4 {
+    font-size: 3.0rem;
+  }
+  h5 {
+    font-size: 2.4rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Modules */
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/9/2014
+* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+*/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+  .column,
+  .columns {
+    margin-left: 4%;
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+  .one.column,
+  .one.columns {
+    width: 4.66667%;
+  }
+  .two.columns {
+    width: 13.33333%;
+  }
+  .three.columns {
+    width: 22%;
+  }
+  .four.columns {
+    width: 30.66667%;
+  }
+  .five.columns {
+    width: 39.33333%;
+  }
+  .six.columns {
+    width: 48%;
+  }
+  .seven.columns {
+    width: 56.66667%;
+  }
+  .eight.columns {
+    width: 65.33333%;
+  }
+  .nine.columns {
+    width: 74%;
+  }
+  .ten.columns {
+    width: 82.66667%;
+  }
+  .eleven.columns {
+    width: 91.33333%;
+  }
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+  .one-third.column {
+    width: 30.66667%;
+  }
+  .two-thirds.column {
+    width: 65.33333%;
+  }
+  .one-half.column {
+    width: 48%;
+  }
+  .offset-by-one.column,
+  .offset-by-one.columns {
+    margin-left: 8.66667%;
+  }
+  .offset-by-two.column,
+  .offset-by-two.columns {
+    margin-left: 17.33333%;
+  }
+  .offset-by-three.column,
+  .offset-by-three.columns {
+    margin-left: 26%;
+  }
+  .offset-by-four.column,
+  .offset-by-four.columns {
+    margin-left: 34.66667%;
+  }
+  .offset-by-five.column,
+  .offset-by-five.columns {
+    margin-left: 43.33333%;
+  }
+  .offset-by-six.column,
+  .offset-by-six.columns {
+    margin-left: 52%;
+  }
+  .offset-by-seven.column,
+  .offset-by-seven.columns {
+    margin-left: 60.66667%;
+  }
+  .offset-by-eight.column,
+  .offset-by-eight.columns {
+    margin-left: 69.33333%;
+  }
+  .offset-by-nine.column,
+  .offset-by-nine.columns {
+    margin-left: 78%;
+  }
+  .offset-by-ten.column,
+  .offset-by-ten.columns {
+    margin-left: 86.66667%;
+  }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns {
+    margin-left: 95.33333%;
+  }
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns {
+    margin-left: 34.66667%;
+  }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns {
+    margin-left: 69.33333%;
+  }
+  .offset-by-one-half.column,
+  .offset-by-one-half.column {
+    margin-left: 52%;
+  }
+}
+
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button,
+button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.button:hover,
+button:hover {
+  color: #333;
+  border-color: #888888;
+  outline: 0;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+  color: #333;
+  border-color: #888888;
+  outline: 0;
+}
+
+.button:focus,
+button:focus {
+  color: #333;
+  border-color: #888888;
+  outline: 0;
+}
+
+input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+  color: #333;
+  border-color: #888888;
+  outline: 0;
+}
+
+.button.button-primary,
+button.button-primary {
+  color: #fff;
+  background-color: #33c3f0;
+  border-color: #33c3f0;
+}
+
+input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+  color: #fff;
+  background-color: #33c3f0;
+  border-color: #33c3f0;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover {
+  color: #fff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+
+input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
+  color: #fff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+
+.button.button-primary:focus,
+button.button-primary:focus {
+  color: #fff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+
+input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+  color: #fff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='text'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
+  border: 1px solid #33c3f0;
+  outline: 0;
+}
+
+textarea:focus,
+select:focus {
+  border: 1px solid #33c3f0;
+  outline: 0;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
+}
+
+ul {
+  list-style: circle inside;
+}
+
+ol {
+  list-style: decimal inside;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+ul ul, ul ol {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+
+ol ol, ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+button,
+.button {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem;
+}
+
+/**
+* ALL TEXTS
+*/
+.text-size {
+  font-family: "Mulish", sans-serif;
+  font-size: 166%;
+}
+
+.text-size-font {
+  text-align: justify;
+}
+
+/**
+* Header-Bereich
+*/
+.header {
+  height: 620px;
+  background-image: url("../img/header-background-edited.jpg");
+  background-size: cover;
+  background-position: 50% 20%;
+}
+
+.header-navbar-links {
+  color: white;
+  float: right;
+  font-family: "Mulish", sans-serif;
+}
+
+.header-navbar-links-div {
+  margin-right: 100px;
+}
+
+.header-navbar-links-third {
+  float: right;
+  list-style-type: none;
+  margin-top: 49px;
+  margin-right: -435px;
+}
+
+.header-brand {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header-navbar-links li {
+  float: left;
+  list-style-type: none;
+  margin-top: 49px;
+  margin-left: -51px;
+  margin-right: 100px;
+}
+
+.header-navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-navbar-links a:hover {
+  color: gainsboro;
+  text-decoration: underline;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header-brand-wrapper {
+  margin-top: 65px;
+  margin-left: 102px;
+  float: left;
+}
+
+.header-brand {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 200%;
+  margin-top: -45%;
+  display: block;
+}
+
+.slogan {
+  padding-top: 250px;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 3px black;
+}
+
+.slogan-top {
+  font-size: 450%;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.slogan-bottom {
+  font-size: 280%;
+  font-family: "Mulish", sans-serif;
+  font-weight: lighter;
+}
+
+.button {
+  margin-top: 50px;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+}
+
+.button:hover {
+  color: white;
+  text-shadow: 0px 0px 3px black;
+  text-decoration: none;
+}
+
+/**
+* About-Pirius
+*/
+.about-pirius {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: #f7f7f7;
+  color: #313d49;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/**
+* Service Bereich
+*/
+.service-background {
+  height: 800px;
+  width: 50%;
+  background-image: url("../img/service-background2.jpg");
+  background-size: cover;
+  float: left;
+}
+
+.service-background {
+  display: none;
+}
+
+@media (min-width: 550px) {
+  .service-background {
+    display: block;
+  }
+}
+
+.service-title {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 120px;
+  padding-bottom: 11px;
+  padding-left: 19px;
+  text-align: center;
+  color: #313d49;
+}
+
+@media (min-width: 550px) {
+  .service-title {
+    padding-top: 110px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 921px) {
+  .service-title {
+    padding-top: 83px;
+    padding-bottom: 11px;
+  }
+}
+
+.service-title-first {
+  padding-bottom: 80px;
+  padding-right: 133px;
+  padding-top: 23px;
+}
+
+.feature {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  margin-left: 57%;
+  margin-top: -29%;
+  background-color: #1e1e1e;
+  border-radius: 10000px;
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  float: left;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.feature-icon:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.feature-icon-two {
+  margin-top: -22%;
+}
+
+.feature-icon-three {
+  margin-top: -15%;
+}
+
+.feature-text {
+  font-size: 25px;
+  padding-bottom: 95px;
+  margin-left: 1192px;
+  width: 1984px;
+  font-family: "Mulish", sans-serif;
+  text-align: start;
+}
+
+.feature-text-first {
+  padding-right: 60px;
+}
+
+.service {
+  height: 800px;
+}
+
+/**
+* Clients - Bereich
+*/
+.clients {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f7f7f7;
+  color: #333945;
+}
+
+.clients-heading {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 75px;
+}
+
+.client-image {
+  width: 100%;
+  border-radius: 10000px;
+  border: 5px solid white;
+  display: none;
+}
+
+@media (min-width: 550px) {
+  .client-image {
+    display: block;
+  }
+}
+
+.client-quote {
+  border: 2px solid #ebebeb;
+  background-color: white;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 55px;
+  padding-bottom: 50px;
+  border-radius: 4px;
+  font-size: 130%;
+  font-weight: lighter;
+  font-style: italic;
+  position: relative;
+}
+
+.client-quote p {
+  margin-bottom: 10px;
+}
+
+.client-quote-author {
+  font-style: normal;
+  font-size: 85%;
+  color: #7793c5;
+}
+
+@media (min-width: 550px) {
+  .client-quote::before,
+  .client-quote::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+  }
+  .client-quote::before {
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #ebebeb;
+  }
+  .client-quote::after {
+    left: -25px;
+    margin-top: -13px;
+    border: 13px solid transparent;
+    border-right: 13px solid white;
+  }
+  .client-quote-two::before {
+    right: -30px;
+    left: auto;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid #ebebeb;
+  }
+  .client-quote-two::after {
+    right: -25px;
+    left: auto;
+    margin-top: -13px;
+    border: 13px solid transparent;
+    border-left: 13px solid white;
+  }
+}
+
+/**
+* Contact-Formular Bereich
+*/
+.contact-formular {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact-heading {
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+.heading-main {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.contact-subheading {
+  font-size: 150%;
+}
+
+.contact-methods {
+  list-style-type: none;
+}
+
+.contact-methods li {
+  width: 50%;
+  float: left;
+  font-weight: lighter;
+  height: 2.5em;
+}
+
+@media (min-width: 550px) {
+  .contact-methods li {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: 950px) {
+  .contact-methods li {
+    width: 50%;
+    margin-bottom: 6px;
+  }
+}
+
+.contact-methods .fa {
+  font-size: 150%;
+}
+
+.contact-icon {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+}
+
+.contact-input {
+  width: 100%;
+  margin-bottom: 28px;
+  background-color: white;
+}
+
+.contact-input-name {
+  width: auto;
+  margin-bottom: 28px;
+}
+
+.course-type-id {
+  width: auto;
+  margin-bottom: 28px;
+}
+
+.course-type-select {
+  width: 41%;
+}
+
+.desired-level-select {
+  width: 100%;
+}
+
+.desired-level-box {
+  width: 58%;
+  float: right;
+}
+
+@media (min-width: 550px) {
+  .desired-level-box {
+    width: 51%;
+  }
+}
+
+@media (min-width: 550px) {
+  .course-type-box {
+    width: 117%;
+  }
+}
+
+.contact-input-name-size-firstname {
+  width: 41%;
+}
+
+@media (min-width: 500px) {
+  .contact-input-name-size-firstname {
+    width: 41%;
+  }
+}
+
+@media (min-width: 550px) {
+  .contact-input-name-size-firstname {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1092px) {
+  .contact-input-name-size-firstname {
+    width: 47%;
+  }
+}
+
+.contact-input-name-size-surname {
+  width: 57%;
+}
+
+@media (min-width: 500px) {
+  .contact-input-name-size-surname {
+    width: 57%;
+  }
+}
+
+@media (min-width: 550px) {
+  .contact-input-name-size-surname {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1092px) {
+  .contact-input-name-size-surname {
+    width: 52%;
+  }
+}
+
+.contact-message {
+  height: 204px;
+}
+
+input.contact-submit[type="submit"] {
+  position: center;
+  margin-bottom: 0px;
+  background-color: cadetblue;
+  color: white;
+}
+
+.contact-form {
+  margin-bottom: 0px;
+}
+
+#contact-success {
+  color: lime;
+}
+
+/**
+*FOOTER Bereich
+*/
+.footer {
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.footer-hr {
+  margin-top: 0px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.top {
+  float: right;
+  color: black;
+}
+
+/**
+* Courses - Bereich
+*/
+.course-overview {
+  background-color: white;
+  padding: 5%;
+  padding-top: 9%;
+}
+
+.course-overview h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.first-course,
+.second-course,
+.third-course,
+.fourth-course {
+  border: 3px solid #a7a0a0;
+  background-color: white;
+  height: 410px;
+  padding-left: 60px;
+  padding-right: 65px;
+  padding-top: 59px;
+  padding-bottom: 82px;
+  border-radius: 10px;
+  font-size: 130%;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+  position: relative;
+}
+
+.first-course p,
+.second-course p,
+.third-course p,
+.fourth-course p {
+  text-align: left;
+}
+
+.first-course::before,
+.second-course::before,
+.third-course::before,
+.fourth-course::before {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 0px;
+  position: absolute;
+  top: 44%;
+  left: 141px;
+  margin-top: -253px;
+  padding: 0px;
+  border: 15px solid #31342dc2;
+}
+
+.first-course::after,
+.second-course::after,
+.third-course::after,
+.fourth-course::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 0px;
+  position: absolute;
+  top: 44%;
+  left: 136px;
+  margin-top: -255px;
+  padding: 0px;
+  border: 13px solid #a7a0a0;
+}
+
+.contact-formular-courses {
+  padding-top: 0px;
+}
+
+.button-courses {
+  color: white;
+  text-shadow: none;
+  background-color: cadetblue;
+}
+
+.button-courses:hover {
+  color: grey;
+  text-shadow: none;
+}
+
+.footer-courses {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.fourth-course p {
+  margin-bottom: 81%;
+}
+
+/**
+* MORNING COURSE
+*/
+.header-two {
+  height: 150px;
+}
+
+.header-navbar-links-two {
+  color: black;
+  float: right;
+  font-family: "Mulish", sans-serif;
+}
+
+.header-brand-two {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header-navbar-links-two li {
+  float: left;
+  list-style-type: none;
+  margin-top: 49px;
+  margin-left: -51px;
+  margin-right: 100px;
+}
+
+.header-navbar-links-two a {
+  color: black;
+  text-decoration: none;
+}
+
+.header-navbar-links-two a:hover {
+  color: black;
+  text-decoration: underline;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header-brand-two {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 200%;
+  margin-top: -45%;
+  display: block;
+}
+
+.morning-course {
+  height: 700px;
+  width: 100%;
+  padding: 100px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.header-brand-wrapper {
+  margin-left: 180px;
+}
+
+.button-morning-course {
+  color: white;
+  background-color: cadetblue;
+}
+
+/*
+** MORNING-COURSE-BEGINNER
+*/
+.picture-morning-course {
+  text-align: center;
+  padding: 4%;
+  padding-top: 0%;
+  margin-top: -31%;
+  float: right;
+}
+
+.morning-course-text-over {
+  width: 72%;
+  padding-bottom: 102px;
+}
+
+.morning-course-text p {
+  width: 100%;
+  text-align: left;
+}
+
+.morning-course-text h3 {
+  width: 94%;
+}
+
+.morning-section {
+  padding-left: 270px;
+  float: left;
+}
+
+.button-morning-course {
+  background-color: cadetblue;
+  color: black;
+  text-shadow: none;
+  margin-top: 6px;
+}
+
+/*
+** MORNING-COURSE-INTERMEDIATE
+*/
+.picture-morning-course-intermediate {
+  text-align: center;
+  padding: 1%;
+  padding-top: 0%;
+  margin-top: 14%;
+  float: left;
+}
+
+.morning-course-text-over-intermediate {
+  width: 90%;
+  padding-bottom: 102px;
+}
+
+.morning-section-intermediate {
+  padding-left: 207px;
+  float: left;
+}
+
+#text-over-b2 {
+  width: 100%;
+}
+
+/*
+** MORNING-COURSE-ADVANCED
+*/
+.picture-morning-course-advanced {
+  text-align: center;
+  padding: 1%;
+  padding-top: 0%;
+  margin-top: 14%;
+  float: left;
+}
+
+.morning-course-text-over-advanced {
+  width: 90%;
+  padding-bottom: 102px;
+}
+
+.morning-section-advanced {
+  padding-left: 207px;
+  float: left;
+}
+
+#text-over-ad-first {
+  width: 74%;
+}
+
+#text-over-ad-sec {
+  width: 60%;
+}
+
+/**
+* MORNING-COURSE-SELECTION
+*/
+.select-course {
+  height: 350px;
+  padding: 100px;
+  padding-top: 175px;
+  padding-bottom: 230px;
+  text-align: center;
+}
+
+.select-course-title {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.button-morning {
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 87px;
+}
+
+.button-morning:hover {
+  background-color: #30aa71;
+}
+
+.morning-section-min-participants {
+  width: 85%;
+  text-align: center;
+  padding-bottom: 53px;
+}
+
+/**
+* AFTERNOON COURSE
+*/
+/**
+* EVENING COURSE
+*/
+/**
+* ONE-ON-ONE COURSE
+*/
+/**
+* Team -Bereich
+*/
+.aboutMe {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: white;
+  color: #313d49;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.aboutmetext {
+  width: 65.33333%;
+}
+
+@media (min-width: 550px) {
+  .aboutmetext {
+    width: 109%;
+  }
+}
+
+@media (min-width: 750px) {
+  .aboutmetext {
+    width: 65.3333%;
+  }
+}
+
+.seinab-pic {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .seinab-pic {
+    display: block;
+  }
+  .seinab-image {
+    width: 118%;
+    border-radius: 10000px;
+    border: 5px solid black;
+    margin-left: 35%;
+    margin-top: 47%;
+  }
+}
+
+.our-teachers {
+  padding-top: 0px;
+  padding-bottom: 150px;
+  text-align: center;
+  background-color: white;
+  color: #313d49;
+  font-family: "Times New Roman", Times, serif;
+}
+/*# sourceMappingURL=styles.css.map */

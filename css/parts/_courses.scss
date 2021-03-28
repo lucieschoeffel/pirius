@@ -1,0 +1,300 @@
+
+/**
+* Courses - Bereich
+*/
+
+
+.course-overview{
+    background-color: white;
+    padding:5%;
+    padding-top:9%;
+    
+
+}
+
+.course-overview h2{
+    font-family: $font-timesnewroman;
+}
+
+.first-course,
+.second-course,
+.third-course,
+.fourth-course{
+    border: 3px solid rgb(167, 160, 160);
+    background-color: white;
+    height:410px;
+    padding-left: 60px;
+    padding-right: 65px;
+    padding-top:59px;
+    padding-bottom: 82px;
+    border-radius: 10px;
+    font-size: 130%;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+}
+
+.first-course p,
+.second-course p,
+.third-course p,
+.fourth-course p{
+    text-align: left;
+}
+
+.first-course::before,
+.second-course::before,
+.third-course::before,
+.fourth-course::before{
+    content: "";
+    display: block;
+    width: 76px;
+    height:0px;
+    position:absolute;
+    top:44%;
+    left:141px;
+    margin-top:-253px;
+    padding:0px;
+    border:15px solid #31342dc2;
+}
+
+.first-course::after,
+.second-course::after,
+.third-course::after,
+.fourth-course::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height:0px;
+    position:absolute;
+    top:44%;
+    left:136px;
+    margin-top:-255px;
+    padding:0px;
+    border:13px solid rgb(167, 160, 160);
+}
+
+.contact-formular-courses{
+    padding-top:0px;
+}
+
+.button-courses{
+    color:white;
+    text-shadow:none;
+    background-color: cadetblue;
+
+}
+.button-courses:hover{
+    color: grey;
+    text-shadow:none;
+
+}
+.footer-courses{
+    padding-top:30px;
+    text-align: center;
+}
+
+.fourth-course p{
+    margin-bottom: 81%;
+}
+
+/**
+* MORNING COURSE
+*/
+
+.header-two{
+height: 150px;
+}
+
+.header-navbar-links-two {
+    color: black;
+    float: right;
+    font-family: $font-mulish;
+    
+}
+
+.header-brand-two{
+    font-family: $font-timesnewroman;
+}
+
+.header-navbar-links-two li{
+    float: left;
+    list-style-type: none;
+    margin-top: 49px;
+    margin-left: -51px;
+    margin-right:100px;
+}
+
+.header-navbar-links-two a{
+    color:black;
+    text-decoration: none;
+}
+
+.header-navbar-links-two a:hover{
+    color:black;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+.header-brand-two {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 200%;
+    margin-top: -45%;
+    display: block;
+}
+
+.morning-course{
+    height:700px;
+    width: 100%;
+    padding:100px;
+    padding-bottom:0px;
+    padding-left:0px;
+    text-align: center;
+}
+
+.header-brand-wrapper{
+    margin-left: 180px;
+}
+
+.button-morning-course{
+    color:white;
+    background-color: cadetblue;
+}
+
+/*
+** MORNING-COURSE-BEGINNER
+*/
+.picture-morning-course{
+    text-align: center;
+    padding: 4%;
+    padding-top: 0%;
+    margin-top: -31%;
+    float: right;
+}
+
+.morning-course-text-over{
+    width: 72%;
+    padding-bottom: 102px;
+}
+.morning-course-text p{
+    width: 100%;
+    text-align: left;
+}
+.morning-course-text h3{
+    width: 94%;
+}
+
+.morning-section{
+    padding-left: 270px;
+    float: left;
+}
+
+.button-morning-course{
+    background-color:cadetblue;
+    color:black;
+    text-shadow:none;
+    margin-top:6px;
+}
+
+/*
+** MORNING-COURSE-INTERMEDIATE
+*/
+
+.picture-morning-course-intermediate{
+    text-align: center;
+    padding: 1%;
+    padding-top: 0%;
+    margin-top: 14%;
+    float: left;
+}
+.morning-course-text-over-intermediate{
+    width: 90%;
+    padding-bottom: 102px;
+}
+.morning-section-intermediate{
+    padding-left: 207px;
+    float: left;
+}
+
+#text-over-b2{
+    width: 100%;
+}
+/*
+** MORNING-COURSE-ADVANCED
+*/
+
+.picture-morning-course-advanced{
+    text-align: center;
+    padding: 1%;
+    padding-top: 0%;
+    margin-top: 14%;
+    float: left;
+}
+
+.morning-course-text-over-advanced{
+    width: 90%;
+    padding-bottom: 102px;
+}
+.morning-section-advanced{
+    padding-left: 207px;
+    float: left;
+}
+
+#text-over-ad-first{
+    width: 74%;
+}
+#text-over-ad-sec{
+    width: 60%;
+}
+
+/**
+* MORNING-COURSE-SELECTION
+*/
+
+.select-course{
+    height:350px;
+    padding:100px;
+    padding-top: 175px;
+    padding-bottom: 230px;
+    text-align: center;
+}
+
+.select-course-title{
+    font-family: $font-timesnewroman;
+}
+
+.button-morning{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 87px;
+}
+
+.button-morning:hover{
+    background-color:rgb(48, 170, 113);
+}
+
+.morning-section-min-participants{
+    width: 85%;
+    text-align: center;
+    padding-bottom:53px;
+}
+
+
+
+/**
+* AFTERNOON COURSE
+*/
+
+/**
+* EVENING COURSE
+*/
+
+/**
+* ONE-ON-ONE COURSE
+*/

@@ -1,0 +1,93 @@
+/**
+* Clients - Bereich
+*/
+
+.clients{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f7f7f7;
+    color: #333945;
+}
+
+.clients-heading{
+    text-align:center;
+    font-family: $font-timesnewroman;
+    margin-bottom: 75px;
+}
+
+.client-image{
+    width: 100%;
+    border-radius: 10000px;
+    border: 5px solid white;
+    display: none;
+}
+
+@media ($bp-larger-than-phablet){
+    .client-image{
+        display: block;
+    }
+}
+
+.client-quote{
+    border: 2px solid rgb(235, 235, 235);
+    background-color: white;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top:55px;
+    padding-bottom: 50px;
+    border-radius: 4px;
+    font-size: 130%;
+    font-weight: lighter;
+    font-style: italic;
+    position:relative;
+    
+}
+
+.client-quote p {
+    margin-bottom: 10px;
+}
+
+.client-quote-author {
+    font-style: normal;
+    font-size: 85%;
+    color:#7793c5;
+}
+
+@media($bp-larger-than-phablet){
+    .client-quote::before,
+    .client-quote::after{
+        content: "";
+        display: block;
+        width: 0px;
+        height:0px;
+        position:absolute;
+        top:50%;
+    }
+    .client-quote::before{
+        left:-30px;
+        margin-top:-15px;
+        border:15px solid transparent;
+        border-right:15px solid rgb(235, 235, 235);
+    }
+    .client-quote::after{
+        left:-25px;
+        margin-top:-13px;
+        border:13px solid transparent;
+        border-right:13px solid rgb(255, 255, 255);
+    }
+
+    .client-quote-two::before{
+        right:-30px;
+        left:auto;
+        margin-top:-15px;
+        border:15px solid transparent;
+        border-left:15px solid rgb(235, 235, 235);
+    }
+    .client-quote-two::after{
+        right:-25px;
+        left:auto;
+        margin-top:-13px;
+        border:13px solid transparent;
+        border-left:13px solid rgb(255, 255, 255);
+    }
+}

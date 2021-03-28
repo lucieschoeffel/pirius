@@ -1,0 +1,89 @@
+/**
+* Service Bereich
+*/
+
+.service-background{
+    height: 800px;
+    width: 50%;
+    background-image: url("../img/service-background2.jpg");
+    background-size: cover;
+    float: left;
+}
+
+.service-background{
+    display: none;
+
+    @media (min-width: 550px){
+        display: block;
+    }
+}
+
+.service-title{
+    font-family: $font-timesnewroman;
+    padding-top:120px;
+    padding-bottom:11px;
+    padding-left:19px;
+    text-align: center;
+    color:#313d49;
+
+    @media ($bp-larger-than-phablet){
+        padding-top: 110px;
+        padding-bottom: 0px;
+    }
+
+    @media (min-width: 921px){
+        padding-top:83px;
+        padding-bottom:11px;
+    }
+}
+.service-title-first{
+    padding-bottom:80px;
+    padding-right:133px;
+    padding-top: 23px;
+}
+.feature{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.feature-icon{
+    width: 70px;
+    height: 70px;
+    margin-left: 57%;
+    margin-top:-29%;
+    background-color: rgb(30 ,30 ,30);
+    border-radius: 10000px;
+    color:rgb(255 ,255 ,255);
+    text-align: center;
+    font-size: 45px;
+    float:left;
+    transition: all 0.7s;
+}
+.feature-icon:hover {
+    transform: rotate(360deg);
+}
+.feature-icon-two{
+    margin-top:-22%;
+}
+.feature-icon-three{
+    margin-top:-15%;
+}
+
+.feature-text{
+    font-size: 25px;
+    padding-bottom: 95px;
+    margin-left: 1192px;
+    width: 1984px;
+    font-family: $font-mulish;
+    text-align: start;
+}
+
+.feature-text-first{
+    padding-right:60px;
+}
+.service{
+    height: 800px;
+}
+
+
+
+

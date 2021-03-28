@@ -1,0 +1,109 @@
+/**
+* ALL TEXTS
+*/
+
+.text-size{
+    font-family: $font-mulish;
+    font-size: 166%;
+    }
+    
+    .text-size-font{
+        text-align: justify;
+    }
+
+
+/**
+* Header-Bereich
+*/
+.header {
+    height: 620px;
+    background-image: url("../img/header-background-edited.jpg");
+    background-size: cover;
+    background-position: 50% 20%;
+}
+
+.header-navbar-links {
+    color: white;
+    float: right;
+    font-family: $font-mulish;
+    
+}
+
+.header-navbar-links-div{
+    margin-right:100px;
+}
+
+.header-navbar-links-third{
+    float: right;
+    list-style-type: none;
+    margin-top: 49px;
+    margin-right:-435px;
+}
+
+.header-brand{
+    font-family: $font-timesnewroman;
+}
+
+.header-navbar-links li{
+    float: left;
+    list-style-type: none;
+    margin-top: 49px;
+    margin-left: -51px;
+    margin-right:100px;
+}
+
+.header-navbar-links a{
+    color:white;
+    text-decoration: none;
+}
+
+.header-navbar-links a:hover{
+    color:gainsboro;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+.header-brand-wrapper{
+    margin-top: 65px;
+    margin-left:102px;
+    float: left;
+}
+
+.header-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 200%;
+    margin-top: -45%;
+    display: block;
+}
+
+.slogan{
+    padding-top:250px;
+    color: white;
+    text-align: center;
+    text-shadow:0px 0px 3px black;
+}
+
+.slogan-top{
+    font-size: 450%;
+    font-weight: bold;
+    font-family: $font-timesnewroman;
+}
+
+.slogan-bottom{
+    font-size: 280%;
+    font-family: $font-mulish;
+    font-weight: lighter;
+}
+
+.button{
+    margin-top:50px;
+    color:white;
+    text-shadow:0px 0px 3px black;
+}
+.button:hover{
+    color:white;
+    text-shadow:0px 0px 3px black;
+    text-decoration: none;
+}
