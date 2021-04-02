@@ -1258,7 +1258,7 @@ input.contact-submit[type="submit"] {
 }
 
 #contact-success {
-  color: lime;
+  color: green;
 }
 
 /**
@@ -1274,12 +1274,15 @@ input.contact-submit[type="submit"] {
   margin-top: 0px;
 }
 
-.footer a {
-  text-decoration: none;
-}
-
 .top {
   float: right;
+  color: black;
+}
+
+/**
+*RECHT
+**/
+.rechtliches {
   color: black;
 }
 
@@ -1374,8 +1377,8 @@ input.contact-submit[type="submit"] {
   text-align: center;
 }
 
-.fourth-course p {
-  margin-bottom: 81%;
+#one-on-one-distance {
+  margin-bottom: 58%;
 }
 
 /**
@@ -1455,20 +1458,39 @@ input.contact-submit[type="submit"] {
 
 .morning-course-text-over {
   width: 72%;
-  padding-bottom: 102px;
+  position: relative;
+  top: 33px;
+  right: -49px;
+  padding-bottom: 83px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#morning-course-text-over-h2 {
+  font-size: 64px;
+  text-shadow: 0px 0px 3px grey;
 }
 
 .morning-course-text p {
   width: 100%;
   text-align: left;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
 }
 
 .morning-course-text h3 {
   width: 94%;
+  font-size: 44px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#course-cursive {
+  font-size: 16px;
+  font-family: 'Mulish';
+  font-size: light;
 }
 
 .morning-section {
-  padding-left: 270px;
+  padding-left: 235px;
   float: left;
 }
 
