@@ -1242,6 +1242,10 @@ form {
   }
 }
 
+.discount {
+  width: 100%;
+}
+
 .contact-message {
   height: 204px;
 }
@@ -1428,7 +1432,7 @@ input.contact-submit[type="submit"] {
 }
 
 .morning-course {
-  height: 700px;
+  height: 310px;
   width: 100%;
   padding: 100px;
   padding-bottom: 0px;
@@ -1450,27 +1454,49 @@ input.contact-submit[type="submit"] {
 */
 .picture-morning-course {
   text-align: center;
-  top: 766px;
+  top: 920px;
   right: 127px;
   float: right;
   position: absolute;
 }
 
 .picture-border {
-  border: 3px solid #a7a0a0;
+  border: 3px solid black;
   background-color: white;
   height: 524px;
   width: 504px;
   position: relative;
-  top: -616px;
+  top: -151px;
   right: -1313px;
+}
+
+.morning-section-first-box {
+  height: 444px;
+  width: 511px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  position: absolute;
+  top: 960px;
+  right: 1281px;
+}
+
+.morning-section-second-box {
+  height: 447px;
+  width: 512px;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  position: absolute;
+  top: 960px;
+  right: 708px;
 }
 
 .morning-course-text-over {
   width: 72%;
   position: relative;
   top: 33px;
-  right: -49px;
+  right: 51px;
   padding-bottom: 83px;
   font-family: "Mulish", sans-serif;
   font-variant: small-caps;
@@ -1481,11 +1507,57 @@ input.contact-submit[type="submit"] {
   text-shadow: 0px 0px 3px grey;
 }
 
+#morning-course-text-over-p {
+  padding-left: 468px;
+  text-decoration: underline;
+}
+
 .morning-course-text p {
   width: 100%;
   text-align: left;
   font-family: "Mulish", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
+  padding-left: 22px;
+}
+
+#h3-1 {
+  position: absolute;
+  top: -27px;
+  right: 18px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 39px;
+}
+
+.box-for-beginner {
+  height: 52px;
+  width: 269px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -26px;
+  right: 117px;
+  border-radius: 5px;
+}
+
+#h3-2 {
+  position: absolute;
+  top: -27px;
+  right: 14px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 39px;
+}
+
+.box-for-elementary {
+  height: 52px;
+  width: 283px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -26px;
+  right: 108px;
+  border-radius: 5px;
 }
 
 .morning-course-text h3 {
@@ -1495,9 +1567,8 @@ input.contact-submit[type="submit"] {
 }
 
 #course-cursive {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Mulish';
-  font-size: light;
 }
 
 .morning-section {
@@ -1509,7 +1580,7 @@ input.contact-submit[type="submit"] {
   background-color: cadetblue;
   color: black;
   text-shadow: none;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 /*
