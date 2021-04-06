@@ -1309,10 +1309,10 @@ input.contact-submit[type="submit"] {
 .fourth-course {
   border: 3px solid #a7a0a0;
   background-color: white;
-  height: 410px;
+  height: 370px;
   padding-left: 60px;
   padding-right: 65px;
-  padding-top: 59px;
+  padding-top: 23px;
   padding-bottom: 82px;
   border-radius: 10px;
   font-size: 130%;
@@ -1329,38 +1329,6 @@ input.contact-submit[type="submit"] {
   text-align: left;
 }
 
-.first-course::before,
-.second-course::before,
-.third-course::before,
-.fourth-course::before {
-  content: "";
-  display: block;
-  width: 76px;
-  height: 0px;
-  position: absolute;
-  top: 44%;
-  left: 141px;
-  margin-top: -253px;
-  padding: 0px;
-  border: 15px solid #31342dc2;
-}
-
-.first-course::after,
-.second-course::after,
-.third-course::after,
-.fourth-course::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 0px;
-  position: absolute;
-  top: 44%;
-  left: 136px;
-  margin-top: -255px;
-  padding: 0px;
-  border: 13px solid #a7a0a0;
-}
-
 .contact-formular-courses {
   padding-top: 0px;
 }
@@ -1369,6 +1337,7 @@ input.contact-submit[type="submit"] {
   color: white;
   text-shadow: none;
   background-color: cadetblue;
+  margin-top: 10px;
 }
 
 .button-courses:hover {
@@ -1432,7 +1401,7 @@ input.contact-submit[type="submit"] {
 }
 
 .morning-course {
-  height: 310px;
+  height: 561px;
   width: 100%;
   padding: 100px;
   padding-bottom: 0px;
@@ -1454,7 +1423,7 @@ input.contact-submit[type="submit"] {
 */
 .picture-morning-course {
   text-align: center;
-  top: 920px;
+  top: 925px;
   right: 127px;
   float: right;
   position: absolute;
@@ -1466,30 +1435,28 @@ input.contact-submit[type="submit"] {
   height: 524px;
   width: 504px;
   position: relative;
-  top: -151px;
+  top: -397px;
   right: -1313px;
 }
 
 .morning-section-first-box {
-  height: 444px;
+  height: 300px;
   width: 511px;
   background-color: white;
   color: black;
-  border: 3px solid black;
   position: absolute;
-  top: 960px;
-  right: 1281px;
+  top: 1042px;
+  right: 1028px;
 }
 
 .morning-section-second-box {
-  height: 447px;
-  width: 512px;
+  height: 300px;
+  width: 511px;
   background-color: white;
   color: black;
-  border: 3px solid black;
   position: absolute;
-  top: 960px;
-  right: 708px;
+  top: 1408px;
+  right: 1028px;
 }
 
 .morning-course-text-over {
@@ -1508,7 +1475,8 @@ input.contact-submit[type="submit"] {
 }
 
 #morning-course-text-over-p {
-  padding-left: 468px;
+  position: absolute;
+  right: -485px;
   text-decoration: underline;
 }
 
@@ -1516,59 +1484,34 @@ input.contact-submit[type="submit"] {
   width: 100%;
   text-align: left;
   font-family: "Mulish", sans-serif;
-  font-size: 25px;
-  padding-left: 22px;
+  font-size: 23px;
+  padding-left: 17px;
 }
 
 #h3-1 {
   position: absolute;
   top: -27px;
-  right: 18px;
-  color: white;
+  right: 239px;
+  color: black;
   font-family: "Mulish", sans-serif;
   font-size: 39px;
-}
-
-.box-for-beginner {
-  height: 52px;
-  width: 269px;
-  background-color: black;
-  color: white;
-  position: absolute;
-  top: -26px;
-  right: 117px;
-  border-radius: 5px;
+  text-decoration: underline;
 }
 
 #h3-2 {
   position: absolute;
   top: -27px;
-  right: 14px;
-  color: white;
+  right: 219px;
+  color: black;
   font-family: "Mulish", sans-serif;
   font-size: 39px;
-}
-
-.box-for-elementary {
-  height: 52px;
-  width: 283px;
-  background-color: black;
-  color: white;
-  position: absolute;
-  top: -26px;
-  right: 108px;
-  border-radius: 5px;
+  text-decoration: underline;
 }
 
 .morning-course-text h3 {
   width: 94%;
   font-size: 44px;
   font-family: "Times New Roman", Times, serif;
-}
-
-#course-cursive {
-  font-size: 14px;
-  font-family: 'Mulish';
 }
 
 .morning-section {
@@ -1580,12 +1523,18 @@ input.contact-submit[type="submit"] {
   background-color: cadetblue;
   color: black;
   text-shadow: none;
-  margin-top: 4px;
+  position: absolute;
+  top: 139px;
+  right: -300px;
 }
 
 /*
 ** MORNING-COURSE-INTERMEDIATE
 */
+.morning-course-intermediate {
+  height: 1100px;
+}
+
 .picture-morning-course-intermediate {
   text-align: center;
   padding: 1%;
