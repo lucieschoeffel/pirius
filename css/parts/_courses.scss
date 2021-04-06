@@ -245,27 +245,44 @@ height: 150px;
 */
 
 .morning-course-intermediate{
-    height:1100px;
+    height: 868px;
 }
 
 .picture-morning-course-intermediate{
     text-align: center;
-    padding: 1%;
-    padding-top: 0%;
-    margin-top: 14%;
-    float: left;
+    position: absolute;
+    right: 130px;
+    top: 975px;
 }
-.morning-course-text-over-intermediate{
-    width: 90%;
-    padding-bottom: 102px;
+
+.picture-border-intermediate{
+    border: 3px solid black;
+    background-color: white;
+    height: 318px;
+    width: 504px;
+    position: relative;
+    top: -559px;
+    right: -1313px;
 }
-.morning-section-intermediate{
-    padding-left: 207px;
-    float: left;
+.morning-course-text-over-int{
+    position: absolute;
+    top: 760px;
+    right: 169px;
+}
+
+/*
+** FIXX!
+*/
+#morning-course-int-p{
+    right: 167px;
 }
 
 #text-over-b2{
-    width: 100%;
+    font-size: 39px;
+    font-family: 'Mulish';
+    text-decoration-line: underline;
+    position: absolute;
+    right: 239px;
 }
 /*
 ** MORNING-COURSE-ADVANCED
