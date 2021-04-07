@@ -5,11 +5,11 @@
 .text-size{
     font-family: $font-mulish;
     font-size: 166%;
-    }
+}
     
-    .text-size-font{
-        text-align: justify;
-    }
+.text-size-font{
+    text-align: justify;
+}
 
 
 /**
@@ -30,7 +30,9 @@
 }
 
 .header-navbar-links-div{
-    margin-right:100px;
+    position: absolute;
+    top: -8px;
+    right: 38px;
 }
 
 .header-navbar-links-third{
@@ -38,6 +40,16 @@
     list-style-type: none;
     margin-top: 49px;
     margin-right:-435px;
+}
+.header-navbar-links-third li{
+    position: absolute;
+    right: 44px;
+    top: 81px;
+    list-style-type: none;
+}
+#index-flag-eng{
+    right: 44px;
+    top: 42px;
 }
 
 .header-brand{
