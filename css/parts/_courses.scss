@@ -153,7 +153,8 @@ height: 150px;
     right: -1313px;
 }
 
-.morning-section-first-box{
+.morning-section-first-box,
+.morning-section-second-box{
     height: 300px;
     width: 511px;
     background-color: white;
@@ -164,13 +165,7 @@ height: 150px;
 }
 
 .morning-section-second-box{
-    height: 300px;
-    width: 511px;
-    background-color: white;
-    color: black;
-    position: absolute;
     top: 1408px;
-    right: 1028px;
 }
 
 .morning-course-text-over{
@@ -183,13 +178,13 @@ height: 150px;
     font-variant: small-caps;
 }
 #morning-course-text-over-h2{
-    font-size:64px;
+    font-size:68px;
     text-shadow:0px 0px 3px grey;
 }
 
-#morning-course-text-over-p{
+.morning-course-text-over h4{
     position: absolute;
-    right: -485px;
+    right: 449px;
     text-decoration: underline;
 }
 .morning-course-text p{
@@ -269,48 +264,85 @@ height: 150px;
     top: 760px;
     right: 169px;
 }
-
-/*
-** FIXX!
-*/
-#morning-course-int-p{
-    right: 167px;
+.morning-course-text-over-int h4{
+    position: absolute;
+    top: 107px;
+    right: 766px;
+    text-decoration: underline;
 }
 
-#text-over-b2{
+#text-over-b2,
+#text-over-b1{
     font-size: 39px;
     font-family: 'Mulish';
-    text-decoration-line: underline;
+    text-decoration: underline;
     position: absolute;
-    right: 239px;
+    right: 138px;
+}
+#text-over-b1{
+    right: 138px;
 }
 /*
 ** MORNING-COURSE-ADVANCED
 */
 
+.morning-course-advanced{
+    height: 678px;
+}
+.picture-border-advanced{
+    border: 3px solid black;
+    background-color: white;
+    height: 393px;
+    width: 473px;
+    position: relative;
+    top: 466px;
+    right: -42px;
+}
+        
 .picture-morning-course-advanced{
     text-align: center;
-    padding: 1%;
-    padding-top: 0%;
-    margin-top: 14%;
-    float: left;
+    position: absolute;
+    top: 1030px;
+    right: 1328px;
 }
 
-.morning-course-text-over-advanced{
-    width: 90%;
-    padding-bottom: 102px;
+#morning-course-text-over-advanced{
+    position: absolute;
+    top: -44px;
+    right: 143px;
+    font-size: 64px;
 }
-.morning-section-advanced{
-    padding-left: 207px;
-    float: left;
+.morning-course-text-over-ad h4{
+    position:absolute;
+    top: 36px;
+    right: 251px;
+    padding-top:10px;
+    text-decoration: underline;
+}
+.morning-course-text-over-ad{
+    width: 72%;
+    position: relative;
+    top: -237px;
+    right: -187px;
+    padding-bottom: 83px;
+    font-family: "Mulish", sans-serif;
+    font-variant: small-caps;
+}
+.morning-section-advanced-first,
+.morning-section-advanced-second{
+    height: 300px;
+    width: 511px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 967px;
+    right: 532px;
+}
+.morning-section-advanced-second{
+    right: 532px;
+    top: 1315px;
 }
 
-#text-over-ad-first{
-    width: 74%;
-}
-#text-over-ad-sec{
-    width: 80%;
-}
 
 /**
 * MORNING-COURSE-SELECTION
