@@ -2,6 +2,10 @@
 * Service Bereich
 */
 
+.service{
+    height: 800px;
+}
+
 .service-background{
     height: 800px;
     width: 50%;
@@ -13,16 +17,16 @@
 .service-background{
     display: none;
 
-    @media (min-width: 550px){
+    @media ($bp-larger-than-desktophd){
         display: block;
     }
 }
 
 .service-title{
     font-family: $font-timesnewroman;
-    padding-top:120px;
+    padding-top: 75px;
     padding-bottom:11px;
-    padding-left:19px;
+    padding-left:0px;
     text-align: center;
     color:#313d49;
 
@@ -38,7 +42,7 @@
 }
 .service-title-first{
     padding-bottom:80px;
-    padding-right:133px;
+    padding-right: 22px;
     padding-top: 23px;
 }
 .feature{
@@ -48,8 +52,8 @@
 .feature-icon{
     width: 70px;
     height: 70px;
-    margin-left: 57%;
-    margin-top:-29%;
+    margin-left: 8%;
+    margin-top: -3%;
     background-color: rgb(30 ,30 ,30);
     border-radius: 10000px;
     color:rgb(255 ,255 ,255);
@@ -57,32 +61,52 @@
     font-size: 45px;
     float:left;
     transition: all 0.7s;
+    position:absolute;
+
+    @media($bp-larger-than-tablet){
+        margin-top: -1%;
+    }
+
+    @media($bp-larger-than-desktophd){
+        margin-left: 56%;
+    }
 }
 .feature-icon:hover {
     transform: rotate(360deg);
 }
 .feature-icon-two{
-    margin-top:-22%;
+    margin-top:-3%;
+
+    @media($bp-larger-than-tablet){
+        margin-top: -1%;
+    }
 }
 .feature-icon-three{
-    margin-top:-15%;
+    margin-top: -3%;
+
+    @media($bp-larger-than-tablet){
+        margin-top: -1%;
+    }
 }
 
 .feature-text{
     font-size: 25px;
-    padding-bottom: 95px;
-    margin-left: 1192px;
-    width: 1984px;
-    font-family: $font-mulish;
+    padding-bottom: 69px;
+    margin-bottom: -4px;
+    margin-left: 30%;
+    width: 60%;
+    font-family: "Mulish", sans-serif;
     text-align: start;
+
+    @media($bp-larger-than-tablet){
+        margin-left: 24%;
+        width: 71%;
+    }
+    @media($bp-larger-than-desktophd){
+        margin-left: 65%;
+    }
 }
 
-.feature-text-first{
-    padding-right:60px;
-}
-.service{
-    height: 800px;
-}
 
 
 

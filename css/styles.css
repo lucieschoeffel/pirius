@@ -790,7 +790,7 @@ form {
 }
 
 /**
-* ALL TEXTS
+* ALL TEXTS - ist in about pirius
 */
 .text-size {
   font-family: "Mulish", sans-serif;
@@ -811,39 +811,59 @@ form {
   background-position: 50% 20%;
 }
 
+.header-brand {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 200%;
+  display: block;
+  margin-left: -200%;
+}
+
+@media (min-width: 1400px) {
+  #header-brand {
+    margin-left: -178px;
+  }
+}
+
+.header-brand-wrapper {
+  margin-top: 32px;
+  float: left;
+}
+
+.header-navbar {
+  margin-right: -505px;
+}
+
+@media (min-width: 750px) {
+  .header-navbar {
+    margin-right: -351px;
+  }
+}
+
+@media (min-width: 900px) {
+  .header-navbar {
+    margin-right: -176px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-navbar {
+    margin-right: -414px;
+  }
+}
+
 .header-navbar-links {
   color: white;
   float: right;
   font-family: "Mulish", sans-serif;
+  display: none;
 }
 
-.header-navbar-links-div {
-  position: absolute;
-  top: -8px;
-  right: 38px;
-}
-
-.header-navbar-links-third {
-  float: right;
-  list-style-type: none;
-  margin-top: 49px;
-  margin-right: -435px;
-}
-
-.header-navbar-links-third li {
-  position: absolute;
-  right: 44px;
-  top: 81px;
-  list-style-type: none;
-}
-
-#index-flag-eng {
-  right: 44px;
-  top: 42px;
-}
-
-.header-brand {
-  font-family: "Times New Roman", Times, serif;
+@media (min-width: 750px) {
+  .header-navbar-links {
+    display: block;
+  }
 }
 
 .header-navbar-links li {
@@ -852,6 +872,7 @@ form {
   margin-top: 49px;
   margin-left: -51px;
   margin-right: 100px;
+  font-size: 110%;
 }
 
 .header-navbar-links a {
@@ -862,27 +883,16 @@ form {
 .header-navbar-links a:hover {
   color: gainsboro;
   text-decoration: underline;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-.header-brand-wrapper {
-  margin-top: 65px;
-  margin-left: 102px;
-  float: left;
-}
-
-.header-brand {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 200%;
-  margin-top: -45%;
-  display: block;
+#index-flag-ger {
+  margin-top: 46px;
 }
 
 .slogan {
-  padding-top: 250px;
+  padding-top: 152px;
   color: white;
   text-align: center;
   text-shadow: 0px 0px 3px black;
@@ -912,6 +922,22 @@ form {
   text-decoration: none;
 }
 
+#side-menu-trigger {
+  float: right;
+  color: white;
+  margin-top: 43px;
+  margin-right: 512px;
+  font-size: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 750px) {
+  #side-menu-trigger {
+    display: none;
+  }
+}
+
 /**
 * About-Pirius
 */
@@ -927,6 +953,10 @@ form {
 /**
 * Service Bereich
 */
+.service {
+  height: 800px;
+}
+
 .service-background {
   height: 800px;
   width: 50%;
@@ -939,7 +969,7 @@ form {
   display: none;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 1200px) {
   .service-background {
     display: block;
   }
@@ -947,9 +977,9 @@ form {
 
 .service-title {
   font-family: "Times New Roman", Times, serif;
-  padding-top: 120px;
+  padding-top: 75px;
   padding-bottom: 11px;
-  padding-left: 19px;
+  padding-left: 0px;
   text-align: center;
   color: #313d49;
 }
@@ -970,7 +1000,7 @@ form {
 
 .service-title-first {
   padding-bottom: 80px;
-  padding-right: 133px;
+  padding-right: 22px;
   padding-top: 23px;
 }
 
@@ -982,8 +1012,8 @@ form {
 .feature-icon {
   width: 70px;
   height: 70px;
-  margin-left: 57%;
-  margin-top: -29%;
+  margin-left: 8%;
+  margin-top: -3%;
   background-color: #1e1e1e;
   border-radius: 10000px;
   color: white;
@@ -992,6 +1022,19 @@ form {
   float: left;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
+  position: absolute;
+}
+
+@media (min-width: 750px) {
+  .feature-icon {
+    margin-top: -1%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature-icon {
+    margin-left: 56%;
+  }
 }
 
 .feature-icon:hover {
@@ -1000,28 +1043,46 @@ form {
 }
 
 .feature-icon-two {
-  margin-top: -22%;
+  margin-top: -3%;
+}
+
+@media (min-width: 750px) {
+  .feature-icon-two {
+    margin-top: -1%;
+  }
 }
 
 .feature-icon-three {
-  margin-top: -15%;
+  margin-top: -3%;
+}
+
+@media (min-width: 750px) {
+  .feature-icon-three {
+    margin-top: -1%;
+  }
 }
 
 .feature-text {
   font-size: 25px;
-  padding-bottom: 95px;
-  margin-left: 1192px;
-  width: 1984px;
+  padding-bottom: 69px;
+  margin-bottom: -4px;
+  margin-left: 30%;
+  width: 60%;
   font-family: "Mulish", sans-serif;
   text-align: start;
 }
 
-.feature-text-first {
-  padding-right: 60px;
+@media (min-width: 750px) {
+  .feature-text {
+    margin-left: 24%;
+    width: 71%;
+  }
 }
 
-.service {
-  height: 800px;
+@media (min-width: 1200px) {
+  .feature-text {
+    margin-left: 65%;
+  }
 }
 
 /**
@@ -1681,12 +1742,6 @@ input.contact-submit[type="submit"] {
   background-color: #30aa71;
 }
 
-.morning-section-min-participants {
-  width: 85%;
-  text-align: center;
-  padding-bottom: 53px;
-}
-
 /**
 * AFTERNOON COURSE
 */
@@ -1748,5 +1803,38 @@ input.contact-submit[type="submit"] {
   background-color: white;
   color: #313d49;
   font-family: "Times New Roman", Times, serif;
+}
+
+.side-menu {
+  background-color: #f0f0f0;
+  padding-top: 15px;
+}
+
+.side-menu h1 {
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 15px;
+}
+
+.side-menu-navigation {
+  list-style-type: none;
+  border-bottom: 1px solid gainsboro;
+}
+
+.side-menu-navigation li {
+  border-top: 1px solid gainsboro;
+  margin-bottom: 0px;
+}
+
+.side-menu-navigation a {
+  display: block;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.side-menu-navigation #index-flag-ger {
+  margin-top: -4px;
 }
 /*# sourceMappingURL=styles.css.map */
