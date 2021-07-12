@@ -1372,6 +1372,7 @@ input.contact-submit[type="submit"] {
   background-color: white;
   padding: 5%;
   padding-top: 9%;
+  padding-left: 11%;
 }
 
 .course-overview h2 {
@@ -1385,16 +1386,77 @@ input.contact-submit[type="submit"] {
   border: 3px solid #a7a0a0;
   background-color: white;
   height: 370px;
-  padding-left: 60px;
-  padding-right: 65px;
-  padding-top: 23px;
-  padding-bottom: 82px;
+  padding-left: 16%;
+  padding-right: 9%;
+  padding-top: 9%;
+  padding-bottom: 5%;
   border-radius: 10px;
   font-size: 130%;
   font-weight: lighter;
   font-style: italic;
   text-align: center;
   position: relative;
+  margin-bottom: 6%;
+}
+
+@media (min-width: 750px) {
+  .first-course,
+  .second-course,
+  .third-course,
+  .fourth-course {
+    height: 20%;
+    padding-bottom: 11%;
+    margin-bottom: 20%;
+    margin-right: 3%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .first-course,
+  .second-course,
+  .third-course,
+  .fourth-course {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .first-course,
+  .second-course,
+  .third-course,
+  .fourth-course {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .three.columns {
+    margin-right: 2%;
+    width: 5%;
+  }
+}
+
+@media (min-width: 750px) {
+  .second-course {
+    padding-bottom: 24%;
+    margin-bottom: 0%;
+  }
+}
+
+@media (min-width: 750px) {
+  .third-course {
+    padding-bottom: 20%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 750px) {
+  .fourth-course {
+    padding-top: 21%;
+    padding-bottom: 24%;
+  }
 }
 
 .first-course p,
@@ -1426,7 +1488,110 @@ input.contact-submit[type="submit"] {
 }
 
 #one-on-one-distance {
-  margin-bottom: 58%;
+  margin-bottom: 40%;
+}
+
+.row-course-overview {
+  position: relative;
+  display: inline;
+}
+
+@media (min-width: 550px) {
+  .three-columns-course-overview {
+    width: 456%;
+    float: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .three-columns-course-overview {
+    width: 250%;
+    float: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .three-columns-course-overview {
+    width: 336%;
+    float: none;
+  }
+}
+
+/**
+* MORNING-COURSE-SELECTION
+*/
+.select-course {
+  height: 500px;
+  padding: 100px;
+  padding-top: 175px;
+  padding-right: 0%;
+  padding-bottom: 230px;
+  text-align: center;
+}
+
+.select-course-title {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.button-morning-first,
+.button-morning-sec,
+.button-morning-third {
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 18px;
+  padding-top: 15%;
+  padding-right: 27%;
+  padding-left: 30%;
+  padding-bottom: 31%;
+}
+
+.button-morning-sec {
+  padding-right: 19%;
+  padding-left: 20%;
+}
+
+.button-morning-third {
+  padding-right: 24%;
+  padding-left: 30%;
+}
+
+@media (min-width: 550px) {
+  .four.columns {
+    width: 80%;
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 750px) {
+  .four.columns {
+    width: 65%;
+    margin-left: 0%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .four.columns {
+    width: 32%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .four.columns {
+    width: 32%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .row-wrapper {
+    width: 130%;
+    margin-left: -19%;
+  }
+}
+
+.button-morning-first:hover,
+.button-morning-sec:hover,
+.button-morning-third:hover {
+  background-color: cadetblue;
 }
 
 /**
@@ -1476,12 +1641,18 @@ input.contact-submit[type="submit"] {
 }
 
 .morning-course {
-  height: 561px;
+  height: 1200px;
   width: 100%;
   padding: 100px;
   padding-bottom: 0px;
   padding-left: 0px;
   text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .morning-course {
+    height: 419px;
+  }
 }
 
 .header-brand-wrapper {
@@ -1498,10 +1669,17 @@ input.contact-submit[type="submit"] {
 */
 .picture-morning-course {
   text-align: center;
-  top: 925px;
+  top: 989px;
   right: 127px;
   float: right;
   position: absolute;
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .picture-morning-course {
+    display: block;
+  }
 }
 
 .picture-border {
@@ -1510,8 +1688,15 @@ input.contact-submit[type="submit"] {
   height: 524px;
   width: 504px;
   position: relative;
-  top: -397px;
+  top: -195px;
   right: -1313px;
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .picture-border {
+    display: block;
+  }
 }
 
 .morning-section-first-box,
@@ -1522,7 +1707,21 @@ input.contact-submit[type="submit"] {
   color: black;
   position: absolute;
   top: 1042px;
-  right: 1028px;
+  right: -28px;
+}
+
+@media (min-width: 750px) {
+  .morning-section-first-box,
+  .morning-section-second-box {
+    right: 207px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .morning-section-first-box,
+  .morning-section-second-box {
+    right: 1028px;
+  }
 }
 
 .morning-section-second-box {
@@ -1530,7 +1729,7 @@ input.contact-submit[type="submit"] {
 }
 
 .morning-course-text-over {
-  width: 72%;
+  width: 120%;
   position: relative;
   top: 33px;
   right: 51px;
@@ -1539,15 +1738,27 @@ input.contact-submit[type="submit"] {
   font-variant: small-caps;
 }
 
-#morning-course-text-over-h2 {
+.morning-course-text-over-h2 {
   font-size: 68px;
   text-shadow: 0px 0px 3px grey;
 }
 
 .morning-course-text-over h4 {
   position: absolute;
-  right: 449px;
+  right: 18%;
   text-decoration: underline;
+}
+
+@media (min-width: 750px) {
+  .morning-course-text-over h4 {
+    right: 30%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .morning-course-text-over h4 {
+    right: 40%;
+  }
 }
 
 .morning-course-text p {
@@ -1561,21 +1772,33 @@ input.contact-submit[type="submit"] {
 #h3-1 {
   position: absolute;
   top: -27px;
-  right: 239px;
+  right: 153px;
   color: black;
   font-family: "Mulish", sans-serif;
   font-size: 39px;
   text-decoration: underline;
 }
 
+@media (min-width: 1000px) {
+  #h3-1 {
+    right: 239px;
+  }
+}
+
 #h3-2 {
   position: absolute;
   top: -27px;
-  right: 219px;
+  right: 130px;
   color: black;
   font-family: "Mulish", sans-serif;
   font-size: 39px;
   text-decoration: underline;
+}
+
+@media (min-width: 1000px) {
+  #h3-2 {
+    right: 219px;
+  }
 }
 
 .morning-course-text h3 {
@@ -1594,22 +1817,55 @@ input.contact-submit[type="submit"] {
   color: black;
   text-shadow: none;
   position: absolute;
-  top: 139px;
-  right: -300px;
+  top: 210px;
+  right: 146px;
+}
+
+@media (min-width: 750px) {
+  .button-morning-course {
+    top: 141px;
+    right: -236px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .button-morning-course {
+    top: 139px;
+    right: -300px;
+  }
+}
+
+.morning-section-min-participants {
+  position: relative;
+  left: 37%;
 }
 
 /*
 ** MORNING-COURSE-INTERMEDIATE
 */
 .morning-course-intermediate {
-  height: 868px;
+  height: 1206px;
+}
+
+@media (min-width: 1000px) {
+  .morning-course-intermediate {
+    height: 868px;
+  }
 }
 
 .picture-morning-course-intermediate {
   text-align: center;
-  position: absolute;
   right: 130px;
   top: 975px;
+  float: right;
+  position: absolute;
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .picture-morning-course-intermediate {
+    display: block;
+  }
 }
 
 .picture-border-intermediate {
@@ -1620,19 +1876,43 @@ input.contact-submit[type="submit"] {
   position: relative;
   top: -559px;
   right: -1313px;
+  display: none;
 }
 
-.morning-course-text-over-int {
+@media (min-width: 1000px) {
+  .picture-border-intermediate {
+    display: block;
+  }
+}
+
+.morning-course-text-over-int-h2 {
+  font-size: 68px;
+  text-shadow: 0px 0px 3px grey;
   position: absolute;
-  top: 760px;
-  right: 169px;
+  top: 39%;
+  right: -47%;
+  padding-left: 9%;
+}
+
+@media (min-width: 1000px) {
+  .morning-course-text-over-int-h2 {
+    right: 44%;
+    top: 86%;
+  }
 }
 
 .morning-course-text-over-int h4 {
   position: absolute;
-  top: 107px;
-  right: 766px;
+  top: 281%;
+  right: 18%;
   text-decoration: underline;
+}
+
+@media (min-width: 1000px) {
+  .morning-course-text-over-int h4 {
+    right: 53%;
+    top: 227%;
+  }
 }
 
 #text-over-b2,
@@ -1641,18 +1921,20 @@ input.contact-submit[type="submit"] {
   font-family: 'Mulish';
   text-decoration: underline;
   position: absolute;
-  right: 138px;
-}
-
-#text-over-b1 {
-  right: 138px;
+  right: 3%;
 }
 
 /*
 ** MORNING-COURSE-ADVANCED
 */
 .morning-course-advanced {
-  height: 678px;
+  height: 1206px;
+}
+
+@media (min-width: 1000px) {
+  .morning-course-advanced {
+    height: 868px;
+  }
 }
 
 .picture-border-advanced {
@@ -1663,6 +1945,13 @@ input.contact-submit[type="submit"] {
   position: relative;
   top: 466px;
   right: -42px;
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .picture-border-advanced {
+    display: block;
+  }
 }
 
 .picture-morning-course-advanced {
@@ -1670,76 +1959,79 @@ input.contact-submit[type="submit"] {
   position: absolute;
   top: 1030px;
   right: 1328px;
+  display: none;
 }
 
-#morning-course-text-over-advanced {
-  position: absolute;
-  top: -44px;
-  right: 143px;
-  font-size: 64px;
-}
-
-.morning-course-text-over-ad h4 {
-  position: absolute;
-  top: 36px;
-  right: 251px;
-  padding-top: 10px;
-  text-decoration: underline;
+@media (min-width: 1000px) {
+  .picture-morning-course-advanced {
+    display: block;
+  }
 }
 
 .morning-course-text-over-ad {
   width: 72%;
   position: relative;
-  top: -237px;
-  right: -187px;
-  padding-bottom: 83px;
   font-family: "Mulish", sans-serif;
   font-variant: small-caps;
 }
 
-.morning-section-advanced-first,
-.morning-section-advanced-second {
+.morning-course-text-over-ad-h2 {
+  position: absolute;
+  top: 82px;
+  right: -137px;
+  font-size: 64px;
+}
+
+@media (min-width: 1000px) {
+  .morning-course-text-over-ad-h2 {
+    top: -241px;
+    right: 54px;
+  }
+}
+
+.morning-course-text-over-ad h4 {
+  position: absolute;
+  top: 269px;
+  right: -59px;
+  padding-top: 10px;
+  text-decoration: underline;
+}
+
+@media (min-width: 1000px) {
+  .morning-course-text-over-ad h4 {
+    top: -130px;
+    right: 143px;
+  }
+}
+
+.morning-section-first-box-ad,
+.morning-section-second-box-ad {
   height: 300px;
   width: 511px;
   background-color: white;
   color: black;
   position: absolute;
-  top: 967px;
-  right: 532px;
+  top: 50%;
+  right: -6%;
 }
 
-.morning-section-advanced-second {
-  right: 532px;
-  top: 1315px;
+@media (min-width: 1000px) {
+  .morning-section-first-box-ad,
+  .morning-section-second-box-ad {
+    top: 51%;
+    right: 37%;
+  }
 }
 
-/**
-* MORNING-COURSE-SELECTION
-*/
-.select-course {
-  height: 350px;
-  padding: 100px;
-  padding-top: 175px;
-  padding-bottom: 230px;
-  text-align: center;
+.morning-section-second-box-ad {
+  top: 69%;
 }
 
-.select-course-title {
-  font-family: "Times New Roman", Times, serif;
-}
-
-.button-morning {
-  background-color: #1e1e1e;
-  color: white;
-  font-size: 18px;
-  padding-top: 10px;
-  padding-right: 70px;
-  padding-left: 70px;
-  padding-bottom: 87px;
-}
-
-.button-morning:hover {
-  background-color: #30aa71;
+@media (min-width: 1000px) {
+  .morning-section-second-box-ad {
+    top: 69%;
+    right: 37%;
+  }
 }
 
 /**
@@ -1763,20 +2055,29 @@ input.contact-submit[type="submit"] {
   font-family: "Times New Roman", Times, serif;
 }
 
-.aboutmetext {
-  width: 65.33333%;
+.eight
+.columns {
+  width: 100%;
 }
 
 @media (min-width: 550px) {
-  .aboutmetext {
-    width: 109%;
+  .eight
+.columns {
+    width: 100%;
   }
 }
 
 @media (min-width: 750px) {
-  .aboutmetext {
+  .eight
+.columns {
     width: 65.3333%;
   }
+}
+
+.text-size-about-me {
+  font-family: "Mulish", sans-serif;
+  font-size: 166%;
+  text-align: justify;
 }
 
 .seinab-pic {
@@ -1803,6 +2104,10 @@ input.contact-submit[type="submit"] {
   background-color: white;
   color: #313d49;
   font-family: "Times New Roman", Times, serif;
+}
+
+#book {
+  color: black;
 }
 
 .side-menu {

@@ -14,17 +14,25 @@
     
 }
 
-//open
-.aboutmetext{
-    width: 65.33333%;
+.eight 
+.columns{
+    width: 100%;
+
     @media(min-width: 550px){
-        width: 109%;
+        width: 100%;
     }
 
     @media(min-width:750px){
         width: 65.3333%;
     }
 }
+
+.text-size-about-me{
+    font-family: $font-mulish;
+    font-size: 166%;
+    text-align: justify;
+}
+
 
 
 
@@ -53,3 +61,6 @@
     font-family: $font-timesnewroman;
 }
 
+#book{
+    color:black;
+}
