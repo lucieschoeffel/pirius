@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Willkommen bei Pirius</title>
+
+        <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;1,300;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+
+    </head>
+    <body>
+        <div class="side-menu" style="display:none;">
+            <h1>Navigation</h1>
+            <ul class="side-menu-navigation">
+                <li><a href="german-index.html">Home</a></li>
+                <li><a href="german-courses.html">Kurse</a></li>
+                <li><a href="german-team.html">Team</a></li>
+                <li><a href="german-contact-formular.html">Kontakt</a></li>
+                <li><a href="german-index.html"><img src="img/english-flag.jpg"></img></a></li>
+                <li id="index-flag-ger"><a href="german-index.html"><img src="img/german-flag.jpg"></img></a></li>
+            </ul>
+        </div>
+        <header class="header">
+                <div class="container">
+                    <div class="header-brand-wrapper" id="header-brand">
+                        <a class="header-brand" href="german-index.html">Pirius</a>
+                    </div>
+                    <nav class="header-navbar">
+                        <button id="side-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        <ul class="header-navbar-links">
+                            <li><a href="german-index.html">Home</a></li>
+                            <li><a href="german-courses.html">Kurse</a></li>
+                            <li><a href="german-team.html">Team</a></li>
+                            <li><a href="german-contact-formular.html">Kontakt</a></li>
+                            <li><a href="german-index.html"><img src="img/english-flag.jpg"></img></a></li>
+                            <li id="index-flag-ger"><a href="german-index.html"><img src="img/german-flag.jpg"></img></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            <div class="container">
+                <div class="slogan">
+                    <div class="slogan-top"> Pirius </div>
+                    <div class="slogan-bottom"> Lernen, über den Klassenraum hinaus </div>
+                    <a href="german-courses.html" class="button">
+                        Zur Kursübersicht
+                    </a>
+                    </button>
+                </div>
+            </div>
+
+        </header>
+        
+        <div class="aboutMe">
+            <div class="container">
+                <div class="row">
+                    <div class="eight columns">
+                            <h1>Über mich</h1>
+                            <div class="text-size-about-me">Als Gründerin von Pirius half ich schon mit gerade einmal 15 Jahren den ersten Schülern mit der bestmöglichen Wortwahl für Texte, Vorträge und Präsentationen auf Deutsch.Es ist schwer, wenn nicht sogar unmöglich, mit seinen Mitmenschen seine Gedanken, Ideen und Kreationen zu teilen, wenn man nicht die gleiche Sprache spricht.
+                            Deshalb ist es eine Notwendigkeit Zugang zu Sprachtrainern wie unsere bei Pirius und mir zu haben. Wir helfen euch dabei die eigene Stimme zu finden, um eure Geschichte erzählen zu können.
+                            Seit meinen ersten Schritten im Bereich Deutsch als Fremdsprache war ich als Lektorin, Ghostwriterin und Tutorin tätig.
+                            Heute, mehr als zehn Jahre später, gehe ich mit Pirius meinen eigenen Weg und nehme euch mit. 
+                            </div>
+                    </div>
+                    <div class="four columns">
+                        <div class="seinab-pic">
+                            <img src="img/seinab.jpg" class="seinab-image" alt="Picture of Seinab" />
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="our-teachers">
+            <div class="container">
+                <h1>Unsere Trainer</h1>
+                <div class="text-size">Wir sind stolz so ein engagiertes Team von Sprachtrainern zur Piriusfamilie zählen zu dürfen. Während unsere lieben Teilnehmer von der ganzen Welt aus mit uns lernen, unterrichten unsere Trainer von ganz Deutschland. Sie sind diejenigen, die ihre jeweiligen Gruppen zusammenschweißen und dabei keinen Schüler zurücklassen.
+                <br><br>
+                <b><a href="contacts.html" id="book">Buche noch heute eine Stunde mit einem unserer Trainer.</a></b></span></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <hr class="footer-hr">
+                <p>©2020 by Pirius • <a href="impressum.html" class="rechtliches">IMPRESSUM</a> •<a href="agbs.html" class="rechtliches">AGBs</a> • <a href="datenschutz.hmtl" class="rechtliches">Datenschutz</a> <a class="top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></p>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./vendor/jQuery/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="./vendor/jpanelmenu/jquery.jpanelmenu.js"></script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                var jPM = $.jPanelMenu({
+                    menu: '.side-menu',
+                    trigger: '#side-menu-trigger',
+                    direction: 'right'
+                });
+                jPM.on();
+                $(".side-menu a").click(function() {
+                    jPM.close();
+                });
+            });
+        </script>
+
+    </body>
+</html>
